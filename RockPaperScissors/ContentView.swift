@@ -53,7 +53,7 @@ struct ContentView: View {
         }.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight: .infinity)
         .padding()
         .background(LinearGradient(colors: [.blue,.gray], startPoint: .top, endPoint: .bottom)).ignoresSafeArea()
-        .alert("EndGame",isPresented: $showingEndGameScore){
+        .alert("GameOver",isPresented: $showingEndGameScore){
             Button("Restart", action: restart)
         }message: {
             Text("You got \(score) out of 10  Good Job :)")
